@@ -149,16 +149,20 @@ Use `useScopedI18n` to create a module-specific translate.
 ```tsx
 
 const dict = {
-  en: {
-    login: {
-      username: 'User name',
-      password: 'Password',
-      login: 'Login'
+  "en": {
+    "login": {
+      "username": "User name",
+      "password": "Password",
+      "login": "Login"
+    }
   },
-  fr: {
-     ...
+  "fr": {
+    "login": {
+      "username": "Nom d'utilisateur",
+      "password": "Mot de passe",
+      "login": "Connexion"
+    }
   }
- }
 }
 
 export const LoginView = () => {
